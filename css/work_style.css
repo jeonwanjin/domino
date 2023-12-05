@@ -1,0 +1,43 @@
+h1{ 
+    padding: 50px 0; 
+    font-size: 40px;
+    font-weight: bold;
+}
+ul{
+
+}
+li{ 
+    display: flex;
+    padding: 10px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+li>span{
+    display: block;
+    margin-right: 25px;
+}
+.active{
+    text-decoration:line-through;
+    color: #c4c4c4;
+}
+
+
+input{
+    width: 30px;
+}
+
+table{
+
+    padding: 10px;
+    border: 1px solid blue;
+}
+tr{
+    padding: 10px;
+    border: 1px solid blue;
+
+}
+td{
+    padding: 10px;
+    border: 1px solid red;
+    color: blue;
+}

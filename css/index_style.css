@@ -1,0 +1,29 @@
+ul{
+    display: flex;
+}
+ul>li{
+    width: calc(100% / 5);
+    height: 100px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 100px;
+}
+.tabcont{
+    display: none;
+    position: absolute;
+    top:20%;
+    left: 35%;
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+.removeLink{
+    background-color: yellow;
+    color: black;
+}
+
+
+.addLink{
+    background-color: red;
+    color: white;
+}

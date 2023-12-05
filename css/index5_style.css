@@ -1,0 +1,85 @@
+.lst_faq_wrap{
+    border-top: 2px solid #111;
+}
+.lst_faq_wrap>ul li{
+
+    border-bottom: 1px solid #ddd;
+}
+.lst_faq_wrap ul li dl{
+    
+    position: relative;
+}
+.lst_faq_wrap ul li dl::after{
+    content: "";
+    position: absolute;
+    right: 40px;
+    top: 30px;
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-style: solid;
+    border-color: transparent #111 #111 transparent;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+    transition: all 0.15s ease-in-out;
+}
+.lst_faq_wrap li.active dl:after{
+    content: "";
+    position: absolute;
+    right: 40px;
+    top: 36px;
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-style: solid;
+    border-color: transparent #111 #111 transparent;
+    border-width: 0 1px 1px 0;
+    transform: rotate(-135deg);
+    transition: all 0.15s ease-in-out;
+}
+.lst_faq_wrap ul li dl dt a{
+    display: block;
+    position: relative;
+    padding: 0 40px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #111;
+    line-height: 75px;
+    text-decoration: none;
+}
+.lst_faq_wrap ul li dl dt a::before{
+    content: "Q";
+    font-weight: 600;
+    color: #238ece;
+    font-size: 16px;
+    font-family: "Noto";
+    vertical-align: 2px;
+    margin-right: 20px;
+    }
+
+.lst_faq_wrap ul li dd{
+    display: none;
+    background: #f9f9f9;
+    padding: 30px 70px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555555;
+    line-height: 24px;
+    border-top: 1px solid #ddd;
+    position: relative;
+}
+.lst_faq_wrap ul li dd::before{
+    content: "A";
+    font-weight: 600;
+    color: #ff143c;
+    font-size: 16px;
+    font-family: "Noto";
+    margin-right: 20px;
+    position: absolute;
+    top: 28px;
+    left: 36px;
+}
+
+.active{
+    display: block;
+}

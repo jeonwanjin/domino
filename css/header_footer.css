@@ -48,12 +48,49 @@ header{
 .h_btn_wrap>ul{
     display: flex;
 }
-.h_btn_wrap a{
+.h_btn_wrap>ul>a{
+    display: inline-block;
+    line-height: 39px;
+    padding: 10px;
     font-size: 14px;
-    display: block;
-    padding-right: 20px;
     color: #111;
-    line-height: 40px;
+}
+.h_btn_wrap>ul>a:last-of-type{
+    padding: 0;
+    margin-left: 10px;
+    margin-top: 5px;
+    line-height: 0px;
+}
+.select_type2{
+    position: relative;
+    padding-right: 10px;
+    margin-top: 11px;
+    width: 100%;
+    height: 42px;
+}
+#select_type2{
+    width: 60px;
+    height: 27px;
+    border: 1px solid #ddd;
+    border-radius: 13.5px;
+    font-size: 12px;
+    padding: 0 13px;
+    appearance: none;
+}
+.select_type2::after{
+    content: "";
+    right: 19px;
+    width: 7px;
+    height: 7px;
+    z-index: 2;
+    position: absolute;
+    top: 8px;
+    display: inline-block;
+    border-style: solid;
+    border-color: transparent #888 #888 transparent;
+    border-width: 0 1px 1px 0;
+    transform: rotate(45deg);
+    transition: all 0.15s ease-in-out;
 }
 
 nav{
@@ -74,7 +111,6 @@ nav>ul a{
     position: relative;
 }
 .btn_more::after{
-
     content: "";
     position: absolute;
     display: block;
@@ -95,7 +131,6 @@ nav>ul a{
     transition: top 1s;
     padding: 30px 0;
     background-color: white;
-    border-top: 1px solid lightgray;
     z-index: 80;
 }
 .inner_box{
@@ -110,6 +145,7 @@ nav>ul a{
     width: 231px;
 }
 .notice_box{
+    padding-top: 20px;
     padding-left: 50px;
     border-left: 1px solid lightgray;
 }
@@ -127,7 +163,13 @@ nav>ul a{
     color: black;
 }
 .notice_box>ul{
-    margin-top: 16px;
+    margin-top: 26px;
+}
+.notice_box>ul>li{
+    margin-top: 10px;
+}
+.notice_box>a{
+    color: black;
 }
 .active{
     top: 154px;
@@ -209,15 +251,9 @@ address>p{
 
 
 .lang{
-    width: 60px;
-    height: 27px;
-    border: 1px solid #ddd;
-    color: #8d8d8d;
-    border-radius: 13.5px;
-    font-size: 12px;
-    padding: 0 13px;
-    line-height: 27px;
-    margin-top: 7px;
+    width: 174px;
+    height: 19px;
+    border-bottom: 1px solid #888;
 }
 
 dl{
@@ -277,20 +313,49 @@ dd{
     animation-duration: 0.5s;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
+    z-index: 99;
 }
 
 .floating>a{
     display: block;
     
 }
-.floating::after{
-    content: "X";
-    font-size: 24px;
+.btn_close{
+    display: block;
     position: absolute;
+    top: 24px;
     right: 0;
-    top: 0;
+    width: 24px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+    background: none;
 }
+.btn_close::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 20px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #000;
+}
+.btn_close::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #000;
+}
+
 @keyframes float{
     0%{ top:200px }
     100%{ top:192px }
 }
+

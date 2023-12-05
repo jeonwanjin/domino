@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/menu_style.css">
 </head>
 <body>
+
     <header class="w1200">
         <h1><a class="logo bg_icon" href="">logo</a></h1>
         <div class="search_wrap">
@@ -18,10 +19,16 @@
         </div>
         <div class="h_btn_wrap">
             <ul>
-                <li><a href="/html/login.html">로그인</a></li>
-                <li><a href="">회원가입</a></li>
-                <li class="h_lang">kor</li>
-            </ul>
+                <a href="/html/login.html">로그인</a>
+                <a href="">회원가입</a>
+                <a class="h_lang" href="javascript:void(0);">
+                    <div class="select_type2 language">
+                        <select name="" id="select_type2">
+                                <option value="">KOR</option>
+                                <option value="">ENG</option>
+                        </select>
+                    </div>
+                </a>
         </div>
     </header>
 
@@ -36,6 +43,7 @@
             <li><a class="btn_more" href="javascript:void(0);">더보기</a></li>
         </ul>
     </nav>
+
     <div class="w1200 sub_nav">
         <div class="inner_box">
             <div class="menu_wrap">
@@ -83,47 +91,1866 @@
                     <h2 class="page_title">메뉴</h2>
                     <div class="depth">
                         <ol>
-                            <li>홈 > </li>
-                            <li>메뉴 > </li>
-                            <li>피자 > </li>
+                            <li><a href="">홈 ></a></li>
+                            <li><a href="">&nbsp;메뉴 ></a></li>
+                            <li><a id="tab_name" href="javascript:void(0);">&nbsp;피자</a></li>
+
                         </ol>
                     </div>
                 </div>
+
                 <article class="menu_list_area">
                     <div class="menu_nav_box">
                         <div class="menu_nav">
-                            <ul>
-                                <li><a href="">피자</a></li>
-                                <li><a href="">1인 메뉴</a></li>
-                                <li><a href="">하프앤하프</a></li>
-                                <li><a href="">사이드디시</a></li>
-                                <li><a href="">인기세트메뉴</a></li>
-                                <li><a href="">마이키친</a></li>
-                                <li><a href="">음료&기타</a></li>
+                            <ul class="ul_nav">
+                                <li class="tab_menu on" data-text="&nbsp;피자" data-id="pizza">피자</li>
+                                <li class="tab_menu" data-text="&nbsp;1인 메뉴" data-id="one">1인 메뉴</li>
+                                <li class="tab_menu" data-text="&nbsp;하프앤하프" data-id="hnh">하프앤하프</li>
+                                <li class="tab_menu" data-text="&nbsp;사이드디시" data-id="side">사이드디시</li>
+                                <li class="tab_menu" data-text="&nbsp;인기세트메뉴" data-id="set">인기세트메뉴</li>
+                                <li class="tab_menu" data-text="&nbsp;마이키친" data-id="my">마이키친</li>
+                                <li class="tab_menu" data-text="&nbsp;음료&기타" data-id="etc">음료&기타</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="title_new_box">
-                        <h3 class="title_new">New</h3>
+                    
+                    <div class="pizza menu_section active" id="pizza">
+                        <div class="menu_title_box" id="category_new">
+                            <h3 class="title_new">New</h3>
+                        </div>
+                        <div class="menu_list"> 
+                            <ul>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/a.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">치즈 크레이프 샌드</div>
+                                        <div class="label_box">
+                                            <span>NEW</span>
+                                        </div>
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">
+                                            <span class="price">
+                                                <span class="size_l">L</span>
+                                                34,900원
+                                            </span>
+                                            <span class="price">
+                                                <span class="size_m">M</span>
+                                                29,000원
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span>#7가지 치즈, 스테이크, 슈림프가 겹겹이 쌓인 맛의 품격!</span>
+                                        <span>#도미노에서만 만날 수 있는 샌드 도우로 피자의 품격도 높이다!</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/b.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">아보카도 새우</div>
+                                        <div class="label_box">
+                                            <span>NEW</span>
+                                        </div>
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">
+                                            <span class="price">
+                                                <span class="size_l">L</span>
+                                                27,900원~&nbsp;
+                                            </span>
+                                            <span class="price">
+                                                <span class="size_m">M</span>
+                                                20,500원~
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span>#슈퍼시드 화이버 함유 도우로 더 맛있게!</span>
+                                        <span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/c.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">대만 콘 치즈 감자</div>
+                                        <div class="label_box">
+                                            <span>NEW</span>
+                                        </div>
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">
+                                            <span class="price">
+                                                <span class="size_l">L</span>
+                                                17,900원~
+                                            </span>
+                                            <span class="price">
+                                                <span class="size_m"></span>
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span>#도미노 스트릿 피자! 마음까지 들뜨는 가격</span>
+                                        <span>#대만 야시장의 왕자 감자 치즈를 듬뿍 담은 피자</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/d.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">이탈리아 마르게리따</div>
+                                        <div class="label_box">
+                                            <span>NEW</span>
+                                        </div>
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">
+                                            <span class="price">
+                                                <span class="size_l">L</span>
+                                                17,900원~
+                                            </span>
+                                            <span class="price">
+                                                <span class="size_m"></span>
+                            
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span>#도미노 스트릿 피자! 마음까지 들뜨는 가격</span>
+                                        <span>#이탈리아 전통의 맛!  피자 마르게리따!</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu_title_box" id="category_premium">
+                            <h3 class="title_new">프리미엄</h3>
+                        </div>
+                        <div class="menu_list"> 
+                            <ul>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/a.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">치즈 크레이프 샌드</div>
+                                        <div class="label_box">
+                                            <span>NEW</span>
+                                        </div>
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">
+                                            <span class="price">
+                                                <span class="size_l">L</span>
+                                                34,900원
+                                            </span>
+                                            <span class="price">
+                                                <span class="size_m">M</span>
+                                                29,000원
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span>#7가지 치즈, 스테이크, 슈림프가 겹겹이 쌓인 맛의 품격!</span>
+                                        <span>#도미노에서만 만날 수 있는 샌드 도우로 피자의 품격도 높이다!</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/b.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">아보카도 새우</div>
+                                        <div class="label_box">
+                                            <span>NEW</span>
+                                        </div>
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">
+                                            <span class="price">
+                                                <span class="size_l">L</span>
+                                                27,900원~&nbsp;
+                                            </span>
+                                            <span class="price">
+                                                <span class="size_m">M</span>
+                                                20,500원~
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span>#슈퍼시드 화이버 함유 도우로 더 맛있게!</span>
+                                        <span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/p3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">크랩&립 하우스</div>
+                                        
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">
+                                            <span class="price">
+                                                <span class="size_l">L</span>
+                                                34,900원~&nbsp;
+                                            </span>
+                                            <span class="price">
+                                                <span class="size_m">M</span>
+                                                29,000원~
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span>#스노우 크랩&치즈의 눈꽃 축제와 립 스테이크의 불꽃 축제!</span>
+                                        <span>#글로벌 축제의 맛이 하프앤하프로 만나다!</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/p4.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">와일드 와일드 웨스트 스테이크</div>
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">
+                                            <span class="price">
+                                                <span class="size_l">L</span>
+                                                33,900원~&nbsp;
+                                            </span>
+                                            <span class="price">
+                                                <span class="size_m">M</span>
+                                                28,000원~
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span>#‘카우보이’들이 즐겨 먹던 정통 ‘그릴드 비프 스테이크'의 재현!</span>
+                                        <span>#‘그릴드 비프’와 ‘카우보이 버터 치즈 소스’로 만들어 내는 맛의 조화!</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/p5.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">블랙타이거 슈림프</div>
+                                        <div class="label_box">
+                                            <span>시그니처</span>
+                                        </div>
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">
+                                            <span class="price">
+                                                <span class="size_l">L</span>
+                                                36,900원~&nbsp;
+                                            </span>
+                                            <span class="price">
+                                                <span class="size_m">M</span>
+                                                30,000원~
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span>#바다와 육지의 대왕이 하나로</span>
+                                        <span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/p6.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">블록버스터4</div>
+                                    
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">
+                                            <span class="price">
+                                                <span class="size_l">L</span>
+                                                36,900원~&nbsp;
+                                            </span>
+                                            <span class="price">
+                                                <span class="size_m">M</span>
+                                                29,500원~
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span>#4개 도시의 프리미엄 요리를 품은 블록버스터급 콰트로 피자!</span>
+                                        <span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/p7.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">블랙앵거스 스테이크</div>
+                                    
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">
+                                            <span class="price">
+                                                <span class="size_l">L</span>
+                                                35,900원~&nbsp;
+                                            </span>
+                                            <span class="price">
+                                                <span class="size_m">M</span>
+                                                29,500원~
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span>#블랙앵거스 비프에 랍스터볼까지</span>
+                                        <span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/p8.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">베스트 콰트로</div>
+                
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">
+                                            <span class="price">
+                                                <span class="size_l">L</span>
+                                                36,900원~&nbsp;
+                                            </span>
+                                            <span class="price">
+                                                <span class="size_m">M</span>
+                                                29,500원~
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span>#4가지 피자를 한판에</span>
+                                        <span></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu_title_box" id="category_hnh">
+                            <h3 class="title_new">하프앤하프 시그니처</h3>
+                        </div>
+                        <div class="menu_list"> 
+                            <ul>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/H1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">치와일드 와일드 웨스트 스테이크+블랙타이거 슈림프</div>
+                        
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">
+                                            <span class="price">
+                                                <span class="size_l">L</span>
+                                                35,400원~&nbsp;
+                                            </span>
+                                            <span class="price">
+                                                <span class="size_m">M</span>
+                                                29,000원~
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span>#와일드한 스테이크의 맛과 블랙타이거 슈림프의 만남!</span>
+                                        <span>#스테이크와 씨푸드를 동시에!</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/H2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">블랙타이거 슈림프+블랙앵거스 스테이크</div>
+                                        <div class="label_box">
+                                            <span>BEST</span>
+                                        </div>
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">
+                                            <span class="price">
+                                                <span class="size_l">L</span>
+                                                36,400원~&nbsp;
+                                            </span>
+                                            <span class="price">
+                                                <span class="size_m">M</span>
+                                                29,750원~
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span>#씨푸드x스테이크 스페셜 콜라보</span>
+                                        <span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/H3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">포테이토+리얼불고기 더블치즈엣지</div>
+                                    
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">
+                                            <span class="price">
+                                                <span class="size_l">L</span>
+                                                33,900원&nbsp;
+                                            </span>
+                                            <span class="price">
+                                                <span class="size_m">M</span>
+                                                24,500원
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span>#포테이토와 함께 즐기는 리얼 불고기의 맛!</span>
+                                        <span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/h&hplus.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject"></div>
+                                
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">
+                                            <span class="price">
+                                                <span class="size_l"></span>
+                                            
+                                            </span>
+                                            <span class="price">
+                                                <span class="size_m"></span>
+                            
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="new_menu_list">
-                        <ul>
-                            <li>
-                                <div class="prd_img">
-                                    <img src="./img" alt="">
+
+                    <div class="one menu_section" id="one">
+                        <img class="banner_top" src="./img/banner-personPizza_w.jpg" alt="">
+                        <div class="menu_title_box" id="category_one">
+                            <h3 class="title_new">1인 피자</h3>
+                        </div>
+                        <div class="menu_list"> 
+                            <ul>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/one1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">대만 콘 치즈 감자</div>
+                                        <div class="label_box">
+                                            <span>NEW</span>
+                                        </div>
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">                                    
+                                            <span class="price">
+                                                <span class="size_m">1인 피자</span>
+                                                6,900원
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span>#제대로 된 한판! 도미노 1인 피자 (8인치)</span>
+                                        <span>#대만 야시장의 왕자 감자 치즈를 듬뿍 담은 피자</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/one2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">이탈리아 마르게리따</div>
+                                        <div class="label_box">
+                                            <span>NEW</span>
+                                        </div>
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">
+                                            <span class="price">
+                                                <span class="size_m">1인 피자</span>
+                                                6,900원
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span>#제대로 된 한판! 도미노 1인 피자 (8인치)</span>
+                                        <span>#이탈리아 전통의 맛!  피자 마르게리따!</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                           
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject"></div>
+                                      
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">
+                                            <span class="price">
+                                                <span class="size_l"></span>
+                                               
+                                            </span>
+                                            <span class="price">
+                                                <span class="size_m"></span>
+                            
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                           
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject"></div>
+                                      
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">
+                                            <span class="price">
+                                                <span class="size_l"></span>
+                                               
+                                            </span>
+                                            <span class="price">
+                                                <span class="size_m"></span>
+                            
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu_title_box" id="category_bowl">
+                            <h3 class="title_new">피자 라이스볼</h3>
+                        </div>
+                        <div class="menu_list"> 
+                            <ul>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/bowl1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">블랙타이거 슈림프 피자 라이스볼 (Bowl)
+                                            <div class="label_box">
+                                                <span>25%할인</span>
+                                            </div>
+                                            <div class="label_box">
+                                                <span>기간한정</span>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">                                    
+                                            <span class="price">
+                                                10,800원
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span>#블랙타이거 슈림프 피자의 레시피가 담긴 라이스볼  </span>
+                                        <span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/bowl2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">블랙앵거스 스테이크 피자 라이스볼 (Bowl)
+                                            <div class="label_box">
+                                                <span>25%할인</span>
+                                            </div>
+                                            <div class="label_box">
+                                                <span>기간한정</span>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">                                    
+                                            <span class="price">
+                                                10,800원
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span>#블랙앵거스 스테이크 피자의 레시피가 담긴 라이스볼</span>
+                                        <span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                           
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject"></div>
+                                      
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">
+                                            <span class="price">
+                                                <span class="size_l"></span>
+                                               
+                                            </span>
+                                            <span class="price">
+                                                <span class="size_m"></span>
+                            
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                           
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject"></div>
+                                      
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">
+                                            <span class="price">
+                                                <span class="size_l"></span>
+                                               
+                                            </span>
+                                            <span class="price">
+                                                <span class="size_m"></span>
+                            
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                        <span></span>
+                                        <span></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="hnh menu_section" id="hnh">
+                        <div class="menu_info ">
+                            <div class="hnh_innerbox">
+                                <div class="img_wrap">
+                                    <div class="view_box">
+                                        <div class="half_box">
+                                                <div class="pizza_box">
+                                                    <div class="pizza_left">
+                                                    
+                                                    </div>
+                                                    <div class="pizza_right">
+                                    
+                                                    </div>
+                                                </div>
+                                        </div> 
+                                    </div>
                                 </div>
-                                <div class="prd_cont"></div>
-                                <div class="prd_price"></div>
-                                <div class="hashtag"></div>
+                                <div class="detail_box">
+                                    <div class="menu_box">
+                                        <div class="title_box">
+                                            <h3 class="title">피자 한 판으로 두 가지 맛을 동시에!</h3>
+                                        </div>
+                                    </div>
+                                    <div class="recommend_box">
+                                        <div class="title_box">
+                                            <a class="recommend_btn" href="">추천</a>
+                                            <strong>베스트 조합! 하프앤하프 시그니처 3종!</strong>
+                                        </div>
+                                        <div class="recommend_slider">
+                                            <div class="slick_list">
+                                                <div class="slick_track">
+                                                    <div class="slider_item">
+                                                        <a href="">
+                                                            <figure>
+                                                                <img src="./img/pizza_half29.png" alt="">
+                                                            </figure>
+                                                            <figcaption>
+                                                                와일드 와일드 웨스트 스테이크  +
+                                                                <br>
+                                                                블랙타이거 슈림프
+                                                            </figcaption>
+                                                            <a class="btn_order" href="">
+                                                                주문하기
+                                                            </a>
+                                                        </a>
+                                                    </div>
+                                                    <div class="slider_item">
+                                                        <a href="">
+                                                            <figure>
+                                                                <img src="./img/pizza_half20.png" alt="">
+                                                            </figure>
+                                                            <figcaption>
+                                                                블랙타이거 슈림프 +
+                                                                <br>
+                                                                블랙앵거스 스테이크
+                                                            </figcaption>
+                                                            <a class="btn_order" href="">
+                                                                주문하기
+                                                            </a>
+                                                        </a>
+                                                    </div>
+                                                    <div class="slider_item">
+                                                        <a href="">
+                                                            <figure>
+                                                                <img src="./img/pizza_half28.png" alt="">
+                                                            </figure>
+                                                            <figcaption>
+                                                                포테이토 +
+                                                                <br>
+                                                                리얼 불고기 더블치즈엣지
+                                                            </figcaption>
+                                                            <a class="btn_order" href="">
+                                                                주문하기
+                                                            </a>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="select_box">
+
+                                        <div class="step_box">
+                                            <div class="step_title">
+                                                <div class="title_type2">피자 선택</div>
+                                            </div>
+                                            <div class="step_form">
+                                                <div class="form_item">
+                                                    <div class="select_type3">
+                                                        <select class="pizza_select1" id="sel1">        
+                                                            <option value="0">첫번째 피자</option>     
+                                                            <option value="1">뉴욕 오리진</option>
+                                                            <option value="2">리얼불고기</option>
+                                                            <option value="3">베이컨체더치즈</option>
+                                                            <option value="4">블랙앵거스 스테이크</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form_item">
+                                                    <div class="select_type3">
+                                                        <select class="pizza_select2"  id="sel2"> 
+                                                            <option value="0">두번째 피자</option>
+                                                            <option value="1">뉴욕 오리진</option>
+                                                            <option value="2">리얼불고기</option>
+                                                            <option value="3">베이컨체더치즈</option>
+                                                            <option value="4">블랙앵거스 스테이크</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p class="half_guide">
+                                                
+                                	        * 하프앤하프 시그니처는 [메뉴] > [피자] 카테고리 또는 상단의 추천 메뉴에서 주문가능합니다.
+                                
+                                            </p>
+                                        </div>    
+
+                                        <div class="step_box">
+                                            <div class="step_title">
+                                                <div class="title_type2">사이즈 선택</div>
+                                            </div>
+                                            <div class="size_box">
+                                                <div class="chk_box2">
+                                                    L
+                                                </div>
+                                                <div class="chk_box2">
+                                                    M
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="step_box">
+                                            <div class="step_title">
+                                                <div class="title_type2">도우 선택</div>
+                                                <div class="title_type2_side">
+                                                    <a class="notice_text" href="">
+                                                        도우/엣지의 특징
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                            <div class="option_box dough">
+                                                <div class="chk_box dough1">
+                                                    <input type="radio" id="dough1">
+                                                    <label class="checkbox" for="dough1"></label>
+                                                    <label for="dough1">오리지널 도우</label>
+                                                </div>
+                                                <div class="chk_box dough2">
+                                                    <input type="radio" id="dough2">
+                                                    <label class="checkbox" for="dough2"></label>
+                                                    <label for="dough2">나폴리 도우</label>
+                                                </div>
+                                                <div class="chk_box dough3">
+                                                    <input type="radio" id="dough3">
+                                                    <label class="checkbox" for="dough3"></label>
+                                                    <label for="dough3">씬 도우(기본 갈릭디핑 소스 미제공)</label>
+                                                </div>
+                                                <div class="chk_box dough4">
+                                                    <input type="radio" id="dough4">
+                                                    <label class="checkbox" for="dough4"></label>
+                                                    <label for="dough4">슈퍼시드 화이버 함유 도우
+                                                        <span>+3,000원</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="step_box">
+                                            <div class="step_title topping">
+                                                <div class="title_type2">토핑추가</div>
+                                                <a class="btn_toggle_close" href="javascript:void(0)">
+                                                    <span class="hidden">열기</span>
+                                                </a>
+                                                <div class="title_type2_side">
+                                                    <a class="notice_text" href="">
+                                                        토핑 알레르기 유발성분
+                                                    </a>
+                                                </div>  
+                                            </div>
+                                            
+                                            <div class="toggle_box">
+                                                <ul class="toggle_box_text">
+                                                    <li>*토핑추가는 피자 한판 당 5개까지 추가 가능</li>
+                                                </ul>
+                                                <div class="tab_type">
+                                                    <ul class="topping_tab js_tab">
+                                                        <li class=tab_li><a href="javascript:void(0)">메인</a></li>
+                                                        <li class=tab_li><a href="javascript:void(0)">치즈</a></li>
+                                                        <li class=tab_li><a href="javascript:void(0)">애프터</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="allToppingLayer">
+                                                    <div class="tab_content active" id="topping1">
+                                                        <div class="topping_menu_list">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/LTP1.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">치킨 큐브 30g</div>
+                                                                        <div class="price_box">
+                                                                            <strong>1,500</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/LTP2.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">아보카도 큐브 30g</div>
+                                                                        <div class="price_box">
+                                                                            <strong>1,500</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/LTP3.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">립 스테이크 35g</div>
+                                                                        <div class="price_box">
+                                                                            <strong>4,500</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/LTP4.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">스노우 크랩 20g</div>
+                                                                        <div class="price_box">
+                                                                            <strong>3,000</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/LTP5.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">로스트 방울 토마토 다이스 10g</div>
+                                                                        <div class="price_box">
+                                                                            <strong>1,000</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab_content" id="topping2">
+                                                        <div class="topping_menu_list">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/FTP1.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">리코타 치즈 30g</div>
+                                                                        <div class="price_box">
+                                                                            <strong>2,500</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/FTP2.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">도미노치즈 100g</div>
+                                                                        <div class="price_box">
+                                                                            <strong>3,300</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/FTP3.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">체더치즈 40g</div>
+                                                                        <div class="price_box">
+                                                                            <strong>1,500</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab_content" id="topping3">
+                                                        <div class="topping_menu_list">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/RTP1.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">콰트로 치즈 퐁듀 20g</div>
+                                                                        <div class="price_box">
+                                                                            <strong>1,000</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/RTP2.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">파르메산 치즈 5g</div>
+                                                                        <div class="price_box">
+                                                                            <strong>1,000</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="step_box">
+                                            <div class="step_title">
+                                                <div class="title_type2">수량 선택</div>
+                                            </div>
+                                            <div class="quantity_box">
+                                                <button class="btn_minus"></button>
+                                                <input  class="opt_qty" type="number" value="0" id="qty" max="9" readonly>
+                                                <button class="btn_plus"></button>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="step_box">
+                                            <div class="step_title">
+                                                <div class="title_type2">사이드디시</div>
+                                            </div>
+                                            <div class="tab_type">
+                                                <ul class="side ">
+                                                    <li class="js_tab active ">
+                                                        <a class="" href="javascript:void(0)">특가</a>
+                                                    </li>
+                                                    <li class="js_tab active">
+                                                        <a class="" href="javascript:void(0)"">일반</a> 
+                                                    </li>
+                                                </ul>
+                                                <div id="sideHnHLayer">
+                                                    <div class="tab_content sidedelete active" id="sidedish1">
+                                                        <div class="topping_menu_list">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/s1.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">[특가] 불고기 대파 크림치즈 파스타</div>
+                                                                        <div class="price_box">
+                                                                            <del>13200</del>
+                                                                            <strong>6,600</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/s2.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">[도미노X슈퍼 마리오] 체다 치즈 치킨</div>
+                                                                        <div class="price_box">
+                                                                            <del>14700</del>
+                                                                            <strong>7,350</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/s3.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">[한정판/특가] 칙볼(치킨볼) 파스타</div>
+                                                                        <div class="price_box">
+                                                                            <del>14700</del>
+                                                                            <strong>7,350</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/s4.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">[한정판/특가] 치킨 체다 더티 프라이즈</div>
+                                                                        <div class="price_box">
+                                                                            <del>6900</del>
+                                                                            <strong>3,450</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/s5.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">[특가] 웨스턴 핫 윙</div>
+                                                                        <div class="price_box">
+                                                                            <del>14700</del>
+                                                                            <strong>7,350</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/s6.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">[특가] 허니&갈릭 윙스</div>
+                                                                        <div class="price_box">
+                                                                            <del>14700</del>
+                                                                            <strong>7,350</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab_content sidedelete " id="sidedish2">
+                                                        <div class="topping_menu_list">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/s1.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">[NEW] 불고기 대파 크림치즈 파스타</div>
+                                                                        <div class="price_box">
+                                                                         
+                                                                            <strong>8,800</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/s4.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">기간한정] 치킨 체다 더티 프라이즈</div>
+                                                                        <div class="price_box">
+                                                                           
+                                                                            <strong>4,600</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/s2.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">[NEW] [도미노x슈퍼 마리오] 체다 치즈 치킨</div>
+                                                                        <div class="price_box">
+                                                                        
+                                                                            <strong>9,800</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/s3.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">[기간한정] 칙볼(치킨볼) 파스타</div>
+                                                                        <div class="price_box">
+                                                                            
+                                                                            <strong>9,800</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/s5.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">[NEW] 웨스턴 핫 윙(8조각)</div>
+                                                                        <div class="price_box">
+                                                                            
+                                                                            <strong>9,800</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="prd_img">
+                                                                        <img src="./img/s6.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="prd_cont">
+                                                                        <div class="subject">허니&갈릭 윙스</div>
+                                                                        <div class="price_box">
+                                                                        
+                                                                            <strong>9,800</strong>
+                                                                        </div>
+                                                                        <div class="quantity_box">
+                                                                            <button class="btn_minus topping"></button>
+                                                                            <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                            <button class="btn_plus topping"></button>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+                                            </div>
+                                        </div>
+
+                                        <div class="step_box">
+                                            <div class="step_title">
+                                                <div class="title_type2">음료&기타</div>
+                                            </div>
+                                            <div class="tab_content active">
+                                                <div class="topping_menu_list">
+                                                    <ul>
+                                                        <li>
+                                                            <div class="prd_img">
+                                                                <img src="./img/co1.jpg" alt="">
+                                                            </div>
+                                                            <div class="prd_cont">
+                                                                <div class="subject">코카콜라 1.25L</div>
+                                                                <div class="price_box">
+                                            
+                                                                    <strong>2,300</strong>
+                                                                </div>
+                                                                <div class="quantity_box">
+                                                                    <button class="btn_minus topping"></button>
+                                                                    <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                    <button class="btn_plus topping"></button>
+                                                                </div>
+                                                            </div>
+                                                        </li> 
+                                                        <li>
+                                                            <div class="prd_img">
+                                                                <img src="./img/co2.jpg" alt="">
+                                                            </div>
+                                                            <div class="prd_cont">
+                                                                <div class="subject">코카콜라 500ml</div>
+                                                                <div class="price_box">
+                                            
+                                                                    <strong>1,700</strong>
+                                                                </div>
+                                                                <div class="quantity_box">
+                                                                    <button class="btn_minus topping"></button>
+                                                                    <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                    <button class="btn_plus topping"></button>
+                                                                </div>
+                                                            </div>
+                                                        </li>  
+                                                        <li>
+                                                            <div class="prd_img">
+                                                                <img src="./img/co3.jpg" alt="">
+                                                            </div>
+                                                            <div class="prd_cont">
+                                                                <div class="subject">코카콜라 제로 1.25L</div>
+                                                                <div class="price_box">
+                                            
+                                                                    <strong>2,300</strong>
+                                                                </div>
+                                                                <div class="quantity_box">
+                                                                    <button class="btn_minus topping"></button>
+                                                                    <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                    <button class="btn_plus topping"></button>
+                                                                </div>
+                                                            </div>
+                                                        </li>  
+                                                        <li>
+                                                            <div class="prd_img">
+                                                                <img src="./img/co4.jpg" alt="">
+                                                            </div>
+                                                            <div class="prd_cont">
+                                                                <div class="subject">코카콜라 제로 500ml</div>
+                                                                <div class="price_box">
+                                            
+                                                                    <strong>1,700</strong>
+                                                                </div>
+                                                                <div class="quantity_box">
+                                                                    <button class="btn_minus topping"></button>
+                                                                    <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                    <button class="btn_plus topping"></button>
+                                                                </div>
+                                                            </div>
+                                                        </li>  
+                                                        <li>
+                                                            <div class="prd_img">
+                                                                <img src="./img/co5.jpg" alt="">
+                                                            </div>
+                                                            <div class="prd_cont">
+                                                                <div class="subject">스프라이트  1.5L</div>
+                                                                <div class="price_box">
+                                            
+                                                                    <strong>2,400</strong>
+                                                                </div>
+                                                                <div class="quantity_box">
+                                                                    <button class="btn_minus topping"></button>
+                                                                    <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                    <button class="btn_plus topping"></button>
+                                                                </div>
+                                                            </div>
+                                                        </li>  
+                                                        <li>
+                                                            <div class="prd_img">
+                                                                <img src="./img/co6.jpg" alt="">
+                                                            </div>
+                                                            <div class="prd_cont">
+                                                                <div class="subject">스프라이트 500ml</div>
+                                                                <div class="price_box">
+                                            
+                                                                    <strong>1,700</strong>
+                                                                </div>
+                                                                <div class="quantity_box">
+                                                                    <button class="btn_minus topping"></button>
+                                                                    <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                    <button class="btn_plus topping"></button>
+                                                                </div>
+                                                            </div>
+                                                        </li>  
+                                                        <li>
+                                                            <div class="prd_img">
+                                                                <img src="./img/co7.jpg" alt="">
+                                                            </div>
+                                                            <div class="prd_cont">
+                                                                <div class="subject">우리 피클 L</div>
+                                                                <div class="price_box">
+                                            
+                                                                    <strong>800</strong>
+                                                                </div>
+                                                                <div class="quantity_box">
+                                                                    <button class="btn_minus topping"></button>
+                                                                    <input  class="opt_qty topping" type="number" value="0" id="qty" max="9" readonly>
+                                                                    <button class="btn_plus topping"></button>
+                                                                </div>
+                                                            </div>
+                                                        </li>  
+
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                        <div class="step_guide">
+                                            <div class="step_guide_btn">
+                                                <a href="">원산지·영양성분 ·알레르기 유발성분 정보</a>
+                                            </div>
+                                            <a href="">
+                                                <div class="notice_text">하프앤하프 피자 이용 시 유의사항</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step_box step_order">                
+                                    <div class="order_box">
+                                        <dl class="order_pizza">
+                                            <dt>피자</dt>
+                                            <dd>
+                                                <p class="total_pizza">없음</p>
+                                            </dd>
+                                        </dl>
+                                        <dl class="order_side">
+                                            <dt>사이드디시</dt>
+                                            <dd>
+                                                <div class="total_side">없음</div>
+                                            </dd>
+                                        </dl>
+                                        <dl class="order_etc">
+                                            <dt>음료 & 기타</dt>
+                                            <dd>
+                                                <div class="total_etc">
+                                                   <div>없음</div> 
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <div class="order_price">
+                                            <div class="login_order_btn">
+                                                <span>총 금액</span>
+                                                <strong class="order_price_sum">
+                                                    0원
+                                                </strong>
+                                                <div class="order_btn">
+                                                    <a class="btn_type" href="">
+                                                        주문하기
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+
+                    <div class="etc menu_section" id="etc">
+                        <div class="menu_title_box" id="category_etc">
+                        </div>
+                        <div class="menu_list"> 
+                            <ul>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/e1.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">코카콜라 1.25L</div>
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">                                    
+                                            <span class="price">
+                                                2,300원
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                    
+                                    </div>
+                                    <div class="quantity_group">
+                                        <div class="quantity_box type2">
+                                            <button class="btn_minus"></button>
+                                            <input  class="opt_qty" type="number" value="1" id="qty" max="9" readonly>
+                                            <button class="btn_plus"></button>
+                                        </div>
+                                        <a class="btn_cart" href="">주문</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/e2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">코카콜라 500ml</div>
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">                                    
+                                            <span class="price">
+                                                1,700원
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                    
+                                    </div>
+                                    <div class="quantity_group">
+                                        <div class="quantity_box type2">
+                                            <button class="btn_minus"></button>
+                                            <input  class="opt_qty" type="number" value="1" id="qty" max="9" readonly>
+                                            <button class="btn_plus"></button>
+                                        </div>
+                                        <a class="btn_cart" href="">주문</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/e3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">코카콜라 제로 1.25L</div>
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">                                    
+                                            <span class="price">
+                                                2,300원
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                    
+                                    </div>
+                                    <div class="quantity_group">
+                                        <div class="quantity_box type2">
+                                            <button class="btn_minus"></button>
+                                            <input  class="opt_qty" type="number" value="1" id="qty" max="9" readonly>
+                                            <button class="btn_plus"></button>
+                                        </div>
+                                        <a class="btn_cart" href="">주문</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/e4.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">코카콜라 제로 500ml</div>
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">                                    
+                                            <span class="price">
+                                                1,700원
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                    
+                                    </div>
+                                    <div class="quantity_group">
+                                        <div class="quantity_box type2">
+                                            <button class="btn_minus"></button>
+                                            <input  class="opt_qty" type="number" value="1" id="qty" max="9" readonly>
+                                            <button class="btn_plus"></button>
+                                        </div>
+                                        <a class="btn_cart" href="">주문</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/e5.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">스프라이트 1.5L</div>
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">                                    
+                                            <span class="price">
+                                                2,400원
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                    
+                                    </div>
+                                    <div class="quantity_group">
+                                        <div class="quantity_box type2">
+                                            <button class="btn_minus"></button>
+                                            <input  class="opt_qty" type="number" value="1" id="qty" max="9" readonly>
+                                            <button class="btn_plus"></button>
+                                        </div>
+                                        <a class="btn_cart" href="">주문</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/e6.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">스프라이트 500ml</div>
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">                                    
+                                            <span class="price">
+                                                1,700원
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                    
+                                    </div>
+                                    <div class="quantity_group">
+                                        <div class="quantity_box type2">
+                                            <button class="btn_minus"></button>
+                                            <input  class="opt_qty" type="number" value="1" id="qty" max="9" readonly>
+                                            <button class="btn_plus"></button>
+                                        </div>
+                                        <a class="btn_cart" href="">주문</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/e7.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">우리 피클 L</div>
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">                                    
+                                            <span class="price">
+                                                800원
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                    
+                                    </div>
+                                    <div class="quantity_group">
+                                        <div class="quantity_box type2">
+                                            <button class="btn_minus"></button>
+                                            <input  class="opt_qty" type="number" value="1" id="qty" max="9" readonly>
+                                            <button class="btn_plus"></button>
+                                        </div>
+                                        <a class="btn_cart" href="">주문</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/e8.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">우리 피클 M</div>
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">                                    
+                                            <span class="price">
+                                                500원
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                    
+                                    </div>
+                                    <div class="quantity_group">
+                                        <div class="quantity_box type2">
+                                            <button class="btn_minus"></button>
+                                            <input  class="opt_qty" type="number" value="1" id="qty" max="9" readonly>
+                                            <button class="btn_plus"></button>
+                                        </div>
+                                        <a class="btn_cart" href="">주문</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/e9.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">갈릭 디핑 소스 15g</div>
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">                                    
+                                            <span class="price">
+                                                200원
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                    
+                                    </div>
+                                    <div class="quantity_group">
+                                        <div class="quantity_box type2">
+                                            <button class="btn_minus"></button>
+                                            <input  class="opt_qty" type="number" value="1" id="qty" max="9" readonly>
+                                            <button class="btn_plus"></button>
+                                        </div>
+                                        <a class="btn_cart" href="">주문</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="prd_img">
+                                        <a href="">
+                                            <img src="./img/e10.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="prd_cont">
+                                        <div class="subject">핫소스</div>
+                                    </div>
+                                    <div class="prd_price">
+                                        <div class="price_box">                                    
+                                            <span class="price">
+                                                100원
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="hashtag">
+                                    
+                                    </div>
+                                    <div class="quantity_group">
+                                        <div class="quantity_box type2">
+                                            <button class="btn_minus"></button>
+                                            <input  class="opt_qty" type="number" value="1" id="qty" max="9" readonly>
+                                            <button class="btn_plus"></button>
+                                        </div>
+                                        <a class="btn_cart" href="">주문</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                
+            </div>
+            
+            <div class="guide_area w1200">
+                <div class="guide_box">
+                    <div class="guide_text">
+                        <p>※ 유의사항</p>
+                        <ul>
+                            <li>단종으로 인한 상품권 사용 안내 : 동일 가격 또는 더 높은 가격의 제품으로 대체 주문 가능
+                                <br>
+                                (상품권에 명시된 제품보다 더 높은 가격대의 제품 주문 시, 금액 추가 발생)
+                                <br>
+                                (단, 상품권에 명시된 제품보다 저렴한 제품 주문 시 발생하는 차액에 대해서는 환불 처리 불가)
+                            </li>
+                            <li>
+                                일부 리조트 및 특수매장은 상기 가격과 차이가 있음
+                            </li>
+                            <li>
+                                모든 사진은 이미지 컷이므로 실제 제품과 다를 수 있습니다.
                             </li>
                         </ul>
                     </div>
-                </article>
+                </div>
+                <div class="guide_box">
+                    <div class="guide_text">
+                        <p class="text-type">제품의 원산지, 영양성분 및 알레르기 유발성분을 먼저 확인하세요.</p>
+                        <div class="guide_btn">
+                            <a class="btn_type" href="">
+                                원산지·영양성분 ·알레르기 유발성분 정보
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
        </section>
     </main>
 
-    <footer class="w100">
+    <footer class="w100 foot">
         <div class="w1200 f_wrap">
             <div>
                 <div class="f_top">
@@ -225,9 +2052,10 @@
         <a href="">
             <img src="https://cdn.dominos.co.kr/renewal2018/w/images/floating_iu_pc1.png" alt="">
         </a>
+        <button class="btn_close"></button>
     </div>
 
 
     <script src="./js/donino_js.js"></script>
 </body>
-</html>
+</html>                                                                                             
