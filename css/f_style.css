@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.w1200{
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+.login_top{
+    height: 60px;
+    margin-top: 50px;
+    padding-bottom: 28px;
+    border-bottom: 2px solid black;
+}
+.login_top>div{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        
+}
+.login_top>div>div{
+    display: flex;
+    position: relative;
+    
+}
+.login_top>div>div>h4{
+    margin-left: 20px;
+}
+.login_top>div>div>h4:first-of-type::after{
+    content: "";
+    position: absolute;
+    display: block;
+    top:4px;
+    left:40px;
+    width: 7px;
+    height: 7px;
+    border-top: 1px solid #111;
+    border-right: 1px solid #111;
+    transform: rotate(45deg);
+}
+
+.login_top>div>h2{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.login_main{
+    margin: 60px 385px;
+
+
+}
+.tab>ul{
+    position: relative;
+    display: flex;
+    text-align:center;
+}
+
+.tab>ul li{
+    width: 215px;
+    height: 60px;
+}
+.tab>ul>li>a{
+    color: #888888;
+}
+
+.member::after{
+    content: "회원로그인";
+    position: absolute;
+    color: #000;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.login_form{
+    margin-top: 60px;
+    padding-top: 50px;
+    width: 430px;
+    height: 466px;
+
+}
+.login_form input{
+
+  
+    font-size: 15px;
+    outline: none;
+    letter-spacing: -0.2px;
+    font-weight: 500;
+    border: none;
+    
+    
+}
+.input_box{
+    width: 100%;
+    padding: 0 20px;
+    height: 42px;
+    line-height: 40px;
+    border: 1px solid rgb(118, 118, 118);
+    margin-bottom: 10px;
+    
+}
+.find{
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+    margin-top: 15px;
+}
+
+.find>input{
+    padding: 0;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(118, 118, 118);
+    vertical-align: middle;
+}
+.find>label{
+
+    display: inline-block;
+    margin-left: 8px;
+    line-height: 20px;
+}
+
+.find_box>ul{
+    position: relative;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.75px;
+    line-height: 20px;
+}
+.find_box>ul>li>a{
+    color: #333;
+    font-weight: 500;   
+}
+
+.line{
+    margin-left: 20px;
+}
+.line::before{
+    position: absolute;
+    content: "";
+    left:80px;  
+    top:4px;
+    width: 1px;
+    height: 13px;
+    border-right: 1px solid #ddd;
+}

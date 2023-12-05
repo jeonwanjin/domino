@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+.wrap{
+    margin: 0 auto;
+    width: 360px;
+}
+form{
+    position: relative;
+    margin-top: 50px;
+}
+h1{
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+label{
+    display: block;
+    padding: 10px 0;
+    font-size: 11px;
+    font-weight: bold;
+}
+select{
+    padding: 10px 0;
+    font-size: 11px;
+    border: none;
+}
+input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid #cecece;
+}
+
+input::placeholder{
+    font-size: 11px;
+    color: #888;
+}
+
+.wrap>div::after{
+    position: absolute;
+    content: "@naver.com";
+    top:180px;
+    margin-left: 140px;
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 999;
+}   
+
+.name{
+    margin-top: 20px;
+}
+
+.date{
+    display: flex;
+}
+.date>input{
+    width: 143px;
+}
+.select_box_date{
+    margin: 0 3px;
+    width: 60px;
+    height: 40px;
+    line-height: 33px;
+    text-align: center;
+    border: 1px solid #cecece;
+}
+
+.select_box_man{
+    padding: 0 10px;
+    width: 100%;
+    height: 40px;
+    line-height: 35px;
+    margin-bottom: 10px;
+    border: 1px solid #cecece;
+}
+.select_box_man>select{
+
+    width: 100%;
+}
+.mail input{
+   margin-bottom: px;
+}
+.label_num{
+    margin-top: 20px;
+}
+.select_box_num{
+    width: 100%;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 35px;
+    border: 1px solid #cecece;
+    margin-bottom: 15px;
+}
+.select_box_num>select{
+    width: 100%;
+}
+.num{
+    display: flex;
+    justify-content: space-between;
+}
+.num>input{
+    width: 143px;
+}
+.num>button{
+    padding: 0 10px;
+    height: 35px;
+    font-size: 11px;
+    color: white;
+    background-color: rgb(30, 187, 101);
+    border: none;   
+}
+.join_btn{
+    margin-top: 25px;
+    height:40px;
+    width: 100%;
+    font-size: 11px;
+    color: white;
+    background-color: rgb(30, 187, 101);
+    border: none;   
+
+}
